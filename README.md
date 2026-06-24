@@ -1,49 +1,44 @@
-Inventaris-Pro: Sistem Manajemen Barang
+# frontend-spa
 
-Aplikasi ini adalah sistem informasi inventaris berbasis web yang dibangun untuk memudahkan pengelolaan stok barang, memantau total aset secara real-time, dan memastikan keamanan data melalui sistem autentikasi.
+This template should help get you started developing with Vue 3 in Vite.
 
-🚀 Fitur Utama
-Autentikasi Aman: Sistem login berbasis token (JWT) dengan Navigation Guard.
+## Recommended IDE Setup
 
-Manajemen Barang (CRUD): Tambah, lihat, ubah, dan hapus data barang dengan mudah.
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-Statistik Dashboard: Rekapitulasi otomatis Total Jenis Barang, Total Stok, dan Total Nilai Aset.
+## Recommended Browser Setup
 
-Pencarian Cepat: Fitur filter barang secara real-time untuk mempercepat pencarian.
+- Chromium-based browsers (Chrome, Edge, Brave, etc.):
+  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
+- Firefox:
+  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
-Antarmuka Modern: Desain responsif dengan tema Dark Mode.
+## Customize configuration
 
-<img width="1915" height="950" alt="image" src="https://github.com/user-attachments/assets/ec4be8be-9ee4-4540-a629-282cdef4676e" />
-<img width="1915" height="1001" alt="image" src="https://github.com/user-attachments/assets/42698234-92b4-4df0-af49-92268ef6623c" />
-<img width="1915" height="947" alt="image" src="https://github.com/user-attachments/assets/0a1b69ba-91b6-40a9-bcbf-9dd1a6742407" />
+See [Vite Configuration Reference](https://vite.dev/config/).
 
+## Project Setup
 
-🛠️ Tech Stack
-Frontend: Vue.js 3, Vite, Tailwind CSS, Vue Router, Axios.
-
-Backend: CodeIgniter 4 (RESTful API).
-
-Database: MySQL.
-
-⚙️ Cara Menjalankan Aplikasi
-1. Backend (CodeIgniter)
-Pastikan database sudah di-import (db_inventaris.sql).
-
-Jalankan server lokal:
-
-Bash
-php spark serve
-2. Frontend (Vue.js)
-Masuk ke folder proyek frontend.
-
-Install dependencies:
-
-Bash
+```sh
 npm install
-Jalankan aplikasi:
+```
 
-Bash
+### Compile and Hot-Reload for Development
+
+```sh
 npm run dev
-Buka di browser: http://localhost:5173/dashboard
+```
 
-Aplikasi ini menerapkan arsitektur Single Page Application (SPA). Komunikasi antara frontend dan backend dilakukan menggunakan REST API dengan format JSON. Keamanan rute dikelola melalui middleware (Navigation Guard) yang memvalidasi token di setiap akses halaman privat.Fitur Profil masih bersifat statis"), sebagai Future Improvements.
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
